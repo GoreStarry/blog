@@ -4,6 +4,8 @@ import Link from "gatsby-link"
 import Helmet from "react-helmet"
 
 // import "../css/typography.css"
+import config from '../../gatsby-config.js';
+const prefixPath = process.env.NODE_ENV === "production" ? config.pathPrefix + '/' : '/';
 
 export default class Template extends React.Component {
   static propTypes = {
@@ -13,7 +15,7 @@ export default class Template extends React.Component {
   render() {
     return (
       <div>
-        { this.props.location.pathname === '/'
+        { this.props.location.pathname === prefixPath
           ?
           <div>
             <Helmet title="Gatsby Default Starter" meta={ [{ name: "description", content: "Sample" }, { name: "keywords", content: "sample, something" },] } />
