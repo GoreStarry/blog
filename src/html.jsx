@@ -17,7 +17,7 @@ export default class HTML extends React.Component {
     }
 
     return (
-      <html lang="en">
+      <html lang="zh-tw">
       <head>
         <meta charSet="utf-8" />
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />

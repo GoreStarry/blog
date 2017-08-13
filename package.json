@@ -11,15 +11,16 @@
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "dependencies": {
-        "gatsby": "^1.0.1",
-        "gatsby-link": "^1.0.1",
+        "gatsby": "^1.8.4",
+        "gatsby-link": "^1.6.6",
         "gatsby-plugin-react-helmet": "^1.0.1"
     },
     "devDependencies": {
-        "add": "^2.0.6",
-        "gatsby-plugin-postcss-sass": "^1.0.1",
-        "gh-pages": "^0.12.0",
-        "yarn": "^0.27.5"
+        "gatsby-plugin-postcss-sass": "^1.0.2",
+        "gatsby-source-filesystem": "^1.4.2",
+        "gatsby-transformer-javascript-static-exports": "^1.3.0",
+        "gatsby-transformer-remark": "^1.7.0",
+        "gh-pages": "^1.0.0"
     },
     "keywords": [
         "gatsby"
