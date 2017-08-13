@@ -4,8 +4,9 @@ import Helmet from "react-helmet"
 
 exports.data = {
   title: 'Choropleth on d3v4',
-  written: '2017-05-04',
+  date: '2017-10-04',
   layoutType: 'post',
+  tag: ["book"],
   path: 'choropleth-on-d3v4',
   category: 'data science',
   description: 'Things about the choropleth.'

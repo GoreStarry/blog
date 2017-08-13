@@ -3,6 +3,15 @@ import React, { PureComponent, PropTypes } from 'react';
 import './StoreHouse.scss';
 
 class StoreHouse extends PureComponent {
+
+  _switchToMovie = () => {
+    this.props.switchPostType('movie')
+  }
+
+  _switchToBook = () => {
+    this.props.switchPostType('book')
+  }
+
   render() {
     return (
       <div id="housebase" style={ { height: window.innerHeight } }>
@@ -24,7 +33,10 @@ class StoreHouse extends PureComponent {
         <div className="house" id="up3"></div>
         <div className="house" id="up4"></div>
         <div className="house" id="downleft">
-          <div className="ad" id="adb">
+          <div
+            className="ad"
+            id="adb"
+            onClick={ this._switchToBook }>
             <p className="had">
               Books
             </p>
@@ -32,7 +44,10 @@ class StoreHouse extends PureComponent {
               <img id="adbmi" src={ require("./images/adbook4.png") } />
             </div>
           </div>
-          <div className="ad" id="adm">
+          <div
+            className="ad"
+            id="adm"
+            onClick={ this._switchToMovie }>
             <p className="had">
               Movie
             </p>
@@ -47,7 +62,7 @@ class StoreHouse extends PureComponent {
 }
 
 StoreHouse.propTypes = {
-
+  switchPostType: PropTypes.func.isRequired,
 };
 
 export default StoreHouse;

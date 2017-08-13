@@ -1,10 +1,56 @@
 import React, { PureComponent, PropTypes } from 'react';
+import TweenMax from "gsap/TweenMax";
+import ScrollToPlugin from "gsap/ScrollToPlugin";
+
 import './ListContainer.scss';
 
+const maxListPerPage = 8;
+
 class ListContainer extends PureComponent {
+  state = {
+    nowPage: 1,
+    nowList: false,
+    maxPage: 1
+  }
+
+  componentDidMount() {
+    this._initList(this.props.listType)
+  }
+
+  componentWillUpdate(nextProps, nextState) {
+    if (nextProps.listType !== this.props.listType) {
+      this._initList(nextProps.listType)
+    }
+  }
+
+  _scrollTo = (dom) => {
+    TweenMax.to(window, 1, {
+      scrollTo: dom
+    })
+  }
+
+
+  _initList = (type) => {
+    const nowList = this.props.postData.filter((data) => {
+      return data.tag.indexOf(type) !== -1;
+    });
+    this.setState({
+      nowList,
+      maxPage: Math.ceil(nowList.length / maxListPerPage)
+    }, () => {
+      this._scrollTo('.stage')
+    });
+  }
+
+  _changePage = (page) => {
+    this.setState({
+      nowPage: page
+    });
+  }
+
   render() {
-    console.log(this.props.dataJsFrontMatter);
-    const {dataJsFrontMatter} = this.props;
+    const {maxPage, nowList} = this.state;
+    const {dataJsFrontMatter, listType} = this.props;
     const inbookHeight = window.innerHeight * 0.85;
     return (
       <div className="stage">
@@ -19,7 +65,7 @@ class ListContainer extends PureComponent {
             <div className="hand" id="handdown"> ▼ </div>
           </a>
         </div>
-        { dataJsFrontMatter.map((post, index) => {
+        { nowList && nowList.map((post, index) => {
             return (
               <div id={ `pg${index}` } key={ `post${index}` }>
                 <div
@@ -36,51 +82,24 @@ class ListContainer extends PureComponent {
               </div>
             )
           }) }
-        <div id="pg1">
-          <div
-            className="inbook"
-            style={ { height: window.innerHeight * 0.85 } }
-            id="1">
-            <img src={ require("../../components/StoreHouse/images/adbook4.png") } alt=""></img>
-            <h1>TEst</h1>
-            <h2>123</h2>
-            <p>
-              123
-            </p> <a href="">（繼續閱讀）</a>
-          </div>
+        <div className="pagen" id="9">
+          { Array.apply(null, Array(maxPage)).map((data, index) => {
+              return <input
+                       type="button"
+                       value={ index + 1 }
+                       key={ `btnPage${index+1}` }
+                       className="naveee"
+                       onClick={ () => this._changePage(index + 1) } />
+            }) }
         </div>
-        <a id="pg2">
-          <div className="inbook" id="2"></div>
-        </a>
-        <a id="pg3">
-          <div className="inbook" id="3"></div>
-        </a>
-        <a id="pg4">
-          <div className="inbook" id="4"></div>
-        </a>
-        <a id="pg5">
-          <div className="inbook" id="5"></div>
-        </a>
-        <a id="pg6">
-          <div className="inbook" id="6"></div>
-        </a>
-        <a id="pg7">
-          <div className="inbook" id="7"></div>
-        </a>
-        <a id="pg8">
-          <div className="inbook" id="8"></div>
-        </a>
-        <a id="pg9">
-          <div className="pagen" id="9"></div>
-        </a>
       </div>
       );
   }
 }
 
 ListContainer.propTypes = {
-  dataRemark: PropTypes.array,
-  dataJsFrontMatter: PropTypes.array,
+  postData: PropTypes.array,
+  listType: PropTypes.any,
 };
 
 export default ListContainer;

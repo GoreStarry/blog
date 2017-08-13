@@ -5,21 +5,15 @@ import Helmet from "react-helmet"
 import IndexContainer from '../containers/IndexContainer';
 import getRemarkDataFromNode from '../helper/getRemarkDataFromNode.js';
 import getJsFrontmatterDataFromNode from '../helper/getJsFrontmatterDataFromNode.js';
-
-exports.data = {
-  title: 'Choropleth on d3v4',
-  written: '2017-05-04',
-  layoutType: 'post',
-  path: 'choropleth-on-d3v4',
-  category: 'data science',
-  description: 'Things about the choropleth.'
-}
+import sortListByDate from '../helper/sortListByDate.js';
 
 export default class Index extends React.Component {
   render() {
     const {data} = this.props;
     const dataRemark = getRemarkDataFromNode(data);
-    const dataJsFrontMatter = getRemarkDataFromNode(data);
+    const dataJsFrontMatter = getJsFrontmatterDataFromNode(data);
+    const sortedDataByDate = sortListByDate([...dataRemark, ...dataJsFrontMatter]);
+    console.log(sortedDataByDate);
     return (
       <div>
         <Helmet>
@@ -27,20 +21,21 @@ export default class Index extends React.Component {
             My Index
           </title>
         </Helmet>
-        <IndexContainer dataRemark={ dataRemark } dataJsFrontMatter={ dataJsFrontMatter } />
+        <IndexContainer postData={ sortedDataByDate } />
       </div>
     )
   }
 }
 
 export const pageQuery = graphql`
-  query BlogPostByPath {
+  query BlogPostByPath{
     allJsFrontmatter {
       edges {
         node {
           data {
             title
-            written
+            date
+            tag
             layoutType
             path
             category
@@ -56,7 +51,8 @@ export const pageQuery = graphql`
           frontmatter {
             title
             path
-            date(formatString: "YYYY MMMM DD")
+            date(formatString: "YYYY-MM-DD")
+            tag
             parent
           }
         }

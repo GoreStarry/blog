@@ -9,9 +9,21 @@ import ListContainer from './containers/ListContainer/ListContainer.jsx';
 class IndexContainer extends PureComponent {
   constructor(props) {
     super(props)
+    this.state = {
+      listType: false,
+    }
+  }
+
+  _switchPostType = (type) => {
+    if (type !== this.state.listType) {
+      this.setState({
+        listType: type,
+      });
+    }
   }
 
   render() {
+    const {listType} = this.state;
     return (
       <div className="IndexContainer">
         <div id="light">
@@ -25,12 +37,12 @@ class IndexContainer extends PureComponent {
               data-stream="false"
               data-show-border="false"></div>
           </div>
-          <StoreHouse/>
-          <ListContainer {...this.props} />
+          <StoreHouse switchPostType={ this._switchPostType } />
+          { listType && <ListContainer {...this.props} listType={ listType } /> }
           <div id="ground">
-            <div id="tip">
-              ⇪請點選上方看板⇪
-            </div>
+            { /* <div id="tip">
+                                                                                                                                                                                                                                                                                                                                                                                                                                                              ⇪請點選上方看板⇪
+                                                                                                                                                                                                                                                                                                                                                                                                                                                            </div> */ }
             <div id="imform">
               Copyright © 2014 Project.Thrill-t3 All rights reserved.
             </div>
@@ -75,8 +87,7 @@ class IndexContainer extends PureComponent {
 }
 
 IndexContainer.propTypes = {
-  dataRemark: PropTypes.array,
-  dataJsFrontMatter: PropTypes.array,
+  postData: PropTypes.array,
 }
 
 IndexContainer.defaultProps = {}
