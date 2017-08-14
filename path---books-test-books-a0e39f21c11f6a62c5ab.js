@@ -1,0 +1,2 @@
+webpackJsonp([0x435c5d699aa63c00],{"./node_modules/json-loader/index.js!./.cache/json/books-test-books.json":function(o,s){o.exports={pathContext:{}}}});
+//# sourceMappingURL=path---books-test-books-a0e39f21c11f6a62c5ab.js.map
