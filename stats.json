@@ -16,6 +16,10 @@
       "component---src-pages-books-test-books-js-567867c3a6ed76a54ba0.js",
       "component---src-pages-books-test-books-js-567867c3a6ed76a54ba0.js.map"
     ],
+    "component---src-templates-blog-post-js": [
+      "component---src-templates-blog-post-js-fb28d16cc870b4f332b0.js",
+      "component---src-templates-blog-post-js-fb28d16cc870b4f332b0.js.map"
+    ],
     "path---page-2": [
       "path---page-2-a0e39f21c11f6a62c5ab.js",
       "path---page-2-a0e39f21c11f6a62c5ab.js.map"
@@ -23,6 +27,10 @@
     "path---index": [
       "path---index-a0e39f21c11f6a62c5ab.js",
       "path---index-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "path---hello-world": [
+      "path---hello-world-932e0d075c72b17d1bc7.js",
+      "path---hello-world-932e0d075c72b17d1bc7.js.map"
     ],
     "component---src-pages-books-test-2-books-js": [
       "component---src-pages-books-test-2-books-js-c6e15abe7a093bc58b18.js",
@@ -49,8 +57,8 @@
       "component---src-pages-index-jsx-528d7aaa29fae057747d.js.map"
     ],
     "app": [
-      "app-e83cb1a0d7b74f857e2c.js",
-      "app-e83cb1a0d7b74f857e2c.js.map"
+      "app-9e95bd3facb4e715166f.js",
+      "app-9e95bd3facb4e715166f.js.map"
     ],
     "path---404": [
       "path---404-a0e39f21c11f6a62c5ab.js",

@@ -1,0 +1,2 @@
+webpackJsonp([0x834755aae49e4800],{"./node_modules/json-loader/index.js!./.cache/json/hello-world.json":function(e,o){e.exports={pathContext:{slug:"/movies/test_movie/"}}}});
+//# sourceMappingURL=path---hello-world-8e8c8dde2bcdbc94712e.js.map

@@ -53,17 +53,16 @@ webpackJsonp([15178676390636814000],{
 	};
 	
 	exports.components = {
+	  "component---src-templates-blog-post-js": __webpack_require__("./node_modules/gatsby/dist/loaders/gatsby-module-loader/index.js?name=component---src-templates-blog-post-js!./src/templates/blog-post.js"),
 	  "component---src-pages-404-jsx": __webpack_require__("./node_modules/gatsby/dist/loaders/gatsby-module-loader/index.js?name=component---src-pages-404-jsx!./src/pages/404.jsx"),
-	  "component---src-pages-index-jsx": __webpack_require__("./node_modules/gatsby/dist/loaders/gatsby-module-loader/index.js?name=component---src-pages-index-jsx!./src/pages/index.jsx"),
 	  "component---src-pages-page-2-jsx": __webpack_require__("./node_modules/gatsby/dist/loaders/gatsby-module-loader/index.js?name=component---src-pages-page-2-jsx!./src/pages/page-2.jsx"),
-	  "component---src-pages-books-test-2-books-js": __webpack_require__("./node_modules/gatsby/dist/loaders/gatsby-module-loader/index.js?name=component---src-pages-books-test-2-books-js!./src/pages/books/test2_books.js"),
 	  "component---src-pages-books-test-books-js": __webpack_require__("./node_modules/gatsby/dist/loaders/gatsby-module-loader/index.js?name=component---src-pages-books-test-books-js!./src/pages/books/test_books.js")
 	};
 	
 	exports.json = (_exports$json = {
 	  "layout-index.json": __webpack_require__("./node_modules/gatsby/dist/loaders/gatsby-module-loader/index.js?name=path---!./.cache/json/layout-index.json"),
-	  "404.json": __webpack_require__("./node_modules/gatsby/dist/loaders/gatsby-module-loader/index.js?name=path---404!./.cache/json/404.json")
-	}, _defineProperty(_exports$json, "layout-index.json", __webpack_require__("./node_modules/gatsby/dist/loaders/gatsby-module-loader/index.js?name=path---!./.cache/json/layout-index.json")), _defineProperty(_exports$json, "index.json", __webpack_require__("./node_modules/gatsby/dist/loaders/gatsby-module-loader/index.js?name=path---index!./.cache/json/index.json")), _defineProperty(_exports$json, "layout-index.json", __webpack_require__("./node_modules/gatsby/dist/loaders/gatsby-module-loader/index.js?name=path---!./.cache/json/layout-index.json")), _defineProperty(_exports$json, "page-2.json", __webpack_require__("./node_modules/gatsby/dist/loaders/gatsby-module-loader/index.js?name=path---page-2!./.cache/json/page-2.json")), _defineProperty(_exports$json, "layout-index.json", __webpack_require__("./node_modules/gatsby/dist/loaders/gatsby-module-loader/index.js?name=path---!./.cache/json/layout-index.json")), _defineProperty(_exports$json, "404-html.json", __webpack_require__("./node_modules/gatsby/dist/loaders/gatsby-module-loader/index.js?name=path---404-html!./.cache/json/404-html.json")), _defineProperty(_exports$json, "layout-index.json", __webpack_require__("./node_modules/gatsby/dist/loaders/gatsby-module-loader/index.js?name=path---!./.cache/json/layout-index.json")), _defineProperty(_exports$json, "books-test-2-books.json", __webpack_require__("./node_modules/gatsby/dist/loaders/gatsby-module-loader/index.js?name=path---books-test-2-books!./.cache/json/books-test-2-books.json")), _defineProperty(_exports$json, "layout-index.json", __webpack_require__("./node_modules/gatsby/dist/loaders/gatsby-module-loader/index.js?name=path---!./.cache/json/layout-index.json")), _defineProperty(_exports$json, "books-test-books.json", __webpack_require__("./node_modules/gatsby/dist/loaders/gatsby-module-loader/index.js?name=path---books-test-books!./.cache/json/books-test-books.json")), _exports$json);
+	  "hello-world.json": __webpack_require__("./node_modules/gatsby/dist/loaders/gatsby-module-loader/index.js?name=path---hello-world!./.cache/json/hello-world.json")
+	}, _defineProperty(_exports$json, "layout-index.json", __webpack_require__("./node_modules/gatsby/dist/loaders/gatsby-module-loader/index.js?name=path---!./.cache/json/layout-index.json")), _defineProperty(_exports$json, "404.json", __webpack_require__("./node_modules/gatsby/dist/loaders/gatsby-module-loader/index.js?name=path---404!./.cache/json/404.json")), _defineProperty(_exports$json, "layout-index.json", __webpack_require__("./node_modules/gatsby/dist/loaders/gatsby-module-loader/index.js?name=path---!./.cache/json/layout-index.json")), _defineProperty(_exports$json, "page-2.json", __webpack_require__("./node_modules/gatsby/dist/loaders/gatsby-module-loader/index.js?name=path---page-2!./.cache/json/page-2.json")), _defineProperty(_exports$json, "layout-index.json", __webpack_require__("./node_modules/gatsby/dist/loaders/gatsby-module-loader/index.js?name=path---!./.cache/json/layout-index.json")), _defineProperty(_exports$json, "404-html.json", __webpack_require__("./node_modules/gatsby/dist/loaders/gatsby-module-loader/index.js?name=path---404-html!./.cache/json/404-html.json")), _defineProperty(_exports$json, "layout-index.json", __webpack_require__("./node_modules/gatsby/dist/loaders/gatsby-module-loader/index.js?name=path---!./.cache/json/layout-index.json")), _defineProperty(_exports$json, "books-test-books.json", __webpack_require__("./node_modules/gatsby/dist/loaders/gatsby-module-loader/index.js?name=path---books-test-books!./.cache/json/books-test-books.json")), _exports$json);
 	
 	exports.layouts = {
 	  "component---src-layouts-index-jsx": __webpack_require__("./node_modules/gatsby/dist/loaders/gatsby-module-loader/index.js?name=component---src-layouts-index-jsx!./.cache/layouts/index.js")
@@ -343,27 +342,6 @@ webpackJsonp([15178676390636814000],{
 
 /***/ }),
 
-/***/ "./node_modules/gatsby/dist/loaders/gatsby-module-loader/index.js?name=path---books-test-2-books!./.cache/json/books-test-2-books.json":
-/***/ (function(module, exports, __webpack_require__) {
-
-	
-	    __webpack_require__(
-	      "./node_modules/gatsby/dist/loaders/gatsby-module-loader/patch.js"
-	    );
-	    module.exports = function(cb) { 
-	     return __webpack_require__.e/* nsure */(16748250237555540000, function(_, error) {
-	        if (error) {
-	          console.log('bundle loading error', error)
-	          cb(true)
-	        } else {
-	          cb(null, function() { return __webpack_require__("./node_modules/json-loader/index.js!./.cache/json/books-test-2-books.json") })
-	        }
-	      });
-	     }
-	    
-
-/***/ }),
-
 /***/ "./node_modules/gatsby/dist/loaders/gatsby-module-loader/index.js?name=path---books-test-books!./.cache/json/books-test-books.json":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -385,7 +363,7 @@ webpackJsonp([15178676390636814000],{
 
 /***/ }),
 
-/***/ "./node_modules/gatsby/dist/loaders/gatsby-module-loader/index.js?name=path---index!./.cache/json/index.json":
+/***/ "./node_modules/gatsby/dist/loaders/gatsby-module-loader/index.js?name=path---hello-world!./.cache/json/hello-world.json":
 /***/ (function(module, exports, __webpack_require__) {
 
 	
@@ -393,12 +371,12 @@ webpackJsonp([15178676390636814000],{
 	      "./node_modules/gatsby/dist/loaders/gatsby-module-loader/patch.js"
 	    );
 	    module.exports = function(cb) { 
-	     return __webpack_require__.e/* nsure */(9347362237655822000, function(_, error) {
+	     return __webpack_require__.e/* nsure */(9459623734783396000, function(_, error) {
 	        if (error) {
 	          console.log('bundle loading error', error)
 	          cb(true)
 	        } else {
-	          cb(null, function() { return __webpack_require__("./node_modules/json-loader/index.js!./.cache/json/index.json") })
+	          cb(null, function() { return __webpack_require__("./node_modules/json-loader/index.js!./.cache/json/hello-world.json") })
 	        }
 	      });
 	     }
@@ -843,7 +821,7 @@ webpackJsonp([15178676390636814000],{
 /***/ "./.cache/pages.json":
 /***/ (function(module, exports) {
 
-	module.exports = [{"componentChunkName":"component---src-pages-404-jsx","layout":"index","layoutComponentChunkName":"component---src-layouts-index-jsx","jsonName":"404.json","path":"/404/"},{"componentChunkName":"component---src-pages-index-jsx","layout":"index","layoutComponentChunkName":"component---src-layouts-index-jsx","jsonName":"index.json","path":"/"},{"componentChunkName":"component---src-pages-page-2-jsx","layout":"index","layoutComponentChunkName":"component---src-layouts-index-jsx","jsonName":"page-2.json","path":"/page-2/"},{"componentChunkName":"component---src-pages-404-jsx","layout":"index","layoutComponentChunkName":"component---src-layouts-index-jsx","jsonName":"404-html.json","path":"/404.html"},{"componentChunkName":"component---src-pages-books-test-2-books-js","layout":"index","layoutComponentChunkName":"component---src-layouts-index-jsx","jsonName":"books-test-2-books.json","path":"/books/test2_books/"},{"componentChunkName":"component---src-pages-books-test-books-js","layout":"index","layoutComponentChunkName":"component---src-layouts-index-jsx","jsonName":"books-test-books.json","path":"/books/test_books/"}]
+	module.exports = [{"componentChunkName":"component---src-templates-blog-post-js","layout":"index","layoutComponentChunkName":"component---src-layouts-index-jsx","jsonName":"hello-world.json","path":"/hello-world"},{"componentChunkName":"component---src-pages-404-jsx","layout":"index","layoutComponentChunkName":"component---src-layouts-index-jsx","jsonName":"404.json","path":"/404/"},{"componentChunkName":"component---src-pages-page-2-jsx","layout":"index","layoutComponentChunkName":"component---src-layouts-index-jsx","jsonName":"page-2.json","path":"/page-2/"},{"componentChunkName":"component---src-pages-404-jsx","layout":"index","layoutComponentChunkName":"component---src-layouts-index-jsx","jsonName":"404-html.json","path":"/404.html"},{"componentChunkName":"component---src-pages-books-test-books-js","layout":"index","layoutComponentChunkName":"component---src-layouts-index-jsx","jsonName":"books-test-books.json","path":"/books/test_books/"}]
 
 /***/ }),
 
@@ -1262,6 +1240,63 @@ webpackJsonp([15178676390636814000],{
 
 /***/ }),
 
+/***/ "./node_modules/hoist-non-react-statics/index.js":
+/***/ (function(module, exports) {
+
+	/**
+	 * Copyright 2015, Yahoo! Inc.
+	 * Copyrights licensed under the New BSD License. See the accompanying LICENSE file for terms.
+	 */
+	'use strict';
+	
+	var REACT_STATICS = {
+	    childContextTypes: true,
+	    contextTypes: true,
+	    defaultProps: true,
+	    displayName: true,
+	    getDefaultProps: true,
+	    mixins: true,
+	    propTypes: true,
+	    type: true
+	};
+	
+	var KNOWN_STATICS = {
+	    name: true,
+	    length: true,
+	    prototype: true,
+	    caller: true,
+	    arguments: true,
+	    arity: true
+	};
+	
+	var isGetOwnPropertySymbolsAvailable = typeof Object.getOwnPropertySymbols === 'function';
+	
+	module.exports = function hoistNonReactStatics(targetComponent, sourceComponent, customStatics) {
+	    if (typeof sourceComponent !== 'string') { // don't hoist over string (html) components
+	        var keys = Object.getOwnPropertyNames(sourceComponent);
+	
+	        /* istanbul ignore else */
+	        if (isGetOwnPropertySymbolsAvailable) {
+	            keys = keys.concat(Object.getOwnPropertySymbols(sourceComponent));
+	        }
+	
+	        for (var i = 0; i < keys.length; ++i) {
+	            if (!REACT_STATICS[keys[i]] && !KNOWN_STATICS[keys[i]] && (!customStatics || !customStatics[keys[i]])) {
+	                try {
+	                    targetComponent[keys[i]] = sourceComponent[keys[i]];
+	                } catch (error) {
+	
+	                }
+	            }
+	        }
+	    }
+	
+	    return targetComponent;
+	};
+
+
+/***/ }),
+
 /***/ "./node_modules/mitt/dist/mitt.js":
 /***/ (function(module, exports) {
 
@@ -1482,27 +1517,6 @@ webpackJsonp([15178676390636814000],{
 
 /***/ }),
 
-/***/ "./node_modules/gatsby/dist/loaders/gatsby-module-loader/index.js?name=component---src-pages-books-test-2-books-js!./src/pages/books/test2_books.js":
-/***/ (function(module, exports, __webpack_require__) {
-
-	
-	    __webpack_require__(
-	      "./node_modules/gatsby/dist/loaders/gatsby-module-loader/patch.js"
-	    );
-	    module.exports = function(cb) { 
-	     return __webpack_require__.e/* nsure */(9982728780452467000, function(_, error) {
-	        if (error) {
-	          console.log('bundle loading error', error)
-	          cb(true)
-	        } else {
-	          cb(null, function() { return __webpack_require__("./node_modules/babel-loader/lib/index.js?{\"plugins\":[\"/Users/GoreStarry/Documents/web/blog/gatsby-starry-mooks/node_modules/gatsby/dist/utils/babel-plugin-extract-graphql.js\",\"/Users/GoreStarry/Documents/web/blog/gatsby-starry-mooks/node_modules/babel-plugin-add-module-exports/lib/index.js\",\"/Users/GoreStarry/Documents/web/blog/gatsby-starry-mooks/node_modules/babel-plugin-transform-object-assign/lib/index.js\"],\"presets\":[\"/Users/GoreStarry/Documents/web/blog/gatsby-starry-mooks/node_modules/babel-preset-env/lib/index.js\",\"/Users/GoreStarry/Documents/web/blog/gatsby-starry-mooks/node_modules/babel-preset-stage-0/lib/index.js\",\"/Users/GoreStarry/Documents/web/blog/gatsby-starry-mooks/node_modules/babel-preset-react/lib/index.js\"],\"cacheDirectory\":true}!./src/pages/books/test2_books.js") })
-	        }
-	      });
-	     }
-	    
-
-/***/ }),
-
 /***/ "./node_modules/gatsby/dist/loaders/gatsby-module-loader/index.js?name=component---src-pages-books-test-books-js!./src/pages/books/test_books.js":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -1517,27 +1531,6 @@ webpackJsonp([15178676390636814000],{
 	          cb(true)
 	        } else {
 	          cb(null, function() { return __webpack_require__("./node_modules/babel-loader/lib/index.js?{\"plugins\":[\"/Users/GoreStarry/Documents/web/blog/gatsby-starry-mooks/node_modules/gatsby/dist/utils/babel-plugin-extract-graphql.js\",\"/Users/GoreStarry/Documents/web/blog/gatsby-starry-mooks/node_modules/babel-plugin-add-module-exports/lib/index.js\",\"/Users/GoreStarry/Documents/web/blog/gatsby-starry-mooks/node_modules/babel-plugin-transform-object-assign/lib/index.js\"],\"presets\":[\"/Users/GoreStarry/Documents/web/blog/gatsby-starry-mooks/node_modules/babel-preset-env/lib/index.js\",\"/Users/GoreStarry/Documents/web/blog/gatsby-starry-mooks/node_modules/babel-preset-stage-0/lib/index.js\",\"/Users/GoreStarry/Documents/web/blog/gatsby-starry-mooks/node_modules/babel-preset-react/lib/index.js\"],\"cacheDirectory\":true}!./src/pages/books/test_books.js") })
-	        }
-	      });
-	     }
-	    
-
-/***/ }),
-
-/***/ "./node_modules/gatsby/dist/loaders/gatsby-module-loader/index.js?name=component---src-pages-index-jsx!./src/pages/index.jsx":
-/***/ (function(module, exports, __webpack_require__) {
-
-	
-	    __webpack_require__(
-	      "./node_modules/gatsby/dist/loaders/gatsby-module-loader/patch.js"
-	    );
-	    module.exports = function(cb) { 
-	     return __webpack_require__.e/* nsure */(13994203391546835000, function(_, error) {
-	        if (error) {
-	          console.log('bundle loading error', error)
-	          cb(true)
-	        } else {
-	          cb(null, function() { return __webpack_require__("./node_modules/babel-loader/lib/index.js?{\"plugins\":[\"/Users/GoreStarry/Documents/web/blog/gatsby-starry-mooks/node_modules/gatsby/dist/utils/babel-plugin-extract-graphql.js\",\"/Users/GoreStarry/Documents/web/blog/gatsby-starry-mooks/node_modules/babel-plugin-add-module-exports/lib/index.js\",\"/Users/GoreStarry/Documents/web/blog/gatsby-starry-mooks/node_modules/babel-plugin-transform-object-assign/lib/index.js\"],\"presets\":[\"/Users/GoreStarry/Documents/web/blog/gatsby-starry-mooks/node_modules/babel-preset-env/lib/index.js\",\"/Users/GoreStarry/Documents/web/blog/gatsby-starry-mooks/node_modules/babel-preset-stage-0/lib/index.js\",\"/Users/GoreStarry/Documents/web/blog/gatsby-starry-mooks/node_modules/babel-preset-react/lib/index.js\"],\"cacheDirectory\":true}!./src/pages/index.jsx") })
 	        }
 	      });
 	     }
@@ -1564,7 +1557,28 @@ webpackJsonp([15178676390636814000],{
 	     }
 	    
 
+/***/ }),
+
+/***/ "./node_modules/gatsby/dist/loaders/gatsby-module-loader/index.js?name=component---src-templates-blog-post-js!./src/templates/blog-post.js":
+/***/ (function(module, exports, __webpack_require__) {
+
+	
+	    __webpack_require__(
+	      "./node_modules/gatsby/dist/loaders/gatsby-module-loader/patch.js"
+	    );
+	    module.exports = function(cb) { 
+	     return __webpack_require__.e/* nsure */(7065993314207131000, function(_, error) {
+	        if (error) {
+	          console.log('bundle loading error', error)
+	          cb(true)
+	        } else {
+	          cb(null, function() { return __webpack_require__("./node_modules/babel-loader/lib/index.js?{\"plugins\":[\"/Users/GoreStarry/Documents/web/blog/gatsby-starry-mooks/node_modules/gatsby/dist/utils/babel-plugin-extract-graphql.js\",\"/Users/GoreStarry/Documents/web/blog/gatsby-starry-mooks/node_modules/babel-plugin-add-module-exports/lib/index.js\",\"/Users/GoreStarry/Documents/web/blog/gatsby-starry-mooks/node_modules/babel-plugin-transform-object-assign/lib/index.js\"],\"presets\":[\"/Users/GoreStarry/Documents/web/blog/gatsby-starry-mooks/node_modules/babel-preset-env/lib/index.js\",\"/Users/GoreStarry/Documents/web/blog/gatsby-starry-mooks/node_modules/babel-preset-stage-0/lib/index.js\",\"/Users/GoreStarry/Documents/web/blog/gatsby-starry-mooks/node_modules/babel-preset-react/lib/index.js\"],\"cacheDirectory\":true}!./src/templates/blog-post.js") })
+	        }
+	      });
+	     }
+	    
+
 /***/ })
 
 });
-//# sourceMappingURL=app-e83cb1a0d7b74f857e2c.js.map
+//# sourceMappingURL=app-98953947ffdba68182da.js.map
